@@ -5,7 +5,6 @@ export class ApiError extends Error {
     errors = [],
     stack = ""
   ) {
-    console.log("Error", Error);
     super(message);
     this.statusCode = statusCode;
     this.data = null;
@@ -20,5 +19,3 @@ export class ApiError extends Error {
     }
   }
 }
-
-// console.log(ApiError.);
